@@ -12,15 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EVA"
         tools:targetApi="31">
+
+        <!-- Splash es la pantalla inicial -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- La activity del juego -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
